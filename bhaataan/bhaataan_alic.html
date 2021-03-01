@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+<title>バート語について考察する</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="./html/common.css">
+<link rel="stylesheet" href="./html/menu.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/leipzig/latest/leipzig.min.css">
+<style>
+.modifier {background-color: #eeeeff}
+.alpha{background-color: #ffeeee}
+.beta{background-color: #eeeeff}
+.gamma{background-color: #eeeeee}
+.delta{background-color: #eeffee}
+.vow{color:red}
+.cons{color:blue}
+.qq i {
+	font-family: "Times New Roman";
+}
+i.bhateme {
+	font-family: "Times New Roman";
+}
+</style>
+<script src="./html/print_bhat.js"></script>
+</head>
+<body class="cool" style="font-family: Arial, Helvetica, sans-serif;">
+<a href="./README.md">トップに戻る</a>
+
+<h1>バート語アリス文をしゃぶりつくす</h1>
+
+<h2>1. 目的</h2>
+<p>私は一応バート語学習者を名乗っており、様々なログを眺めていたらCONCILIVM PHĒTĀTISに入れられるなどした。さてその割には何も覚えていない。とりあえず有名例文であるアリスの読解やら暗記やら伐化燐字文訳やらやっていきたい。</p>
+
+<div id="menu">読み込み中…</div>
+<div id="menuButton" onclick="openClose()">≡</div>
+<script src="./html/header.js" async></script>
+<script src="https://cdn.jsdelivr.net/leipzig/latest/leipzig.min.js"></script>
+<script>
+ document.addEventListener('DOMContentLoaded', function() {
+  	var leipzig = Leipzig();
+    leipzig.addAbbreviations({REAL:"realis",ZERO:"zero",POST:"postpositional",REL:"relativizer", ADJR: "adjectiviser" 
+	/* https://pdfs.semanticscholar.org/12eb/3bf8d3e1ec63d5d97ded07438a63b66ee1e0.pdf */, EPE:"緩衝音; epenthetic",J:"方向変化の-j",LEX:"連体形のlex",ELX:"助動詞遮断のelx",LALEX:"la lex",NLL: "ny la lex", CF: "counterfactual conditional"/* https://en.wikipedia.org/wiki/Counterfactual_conditional */});
+    leipzig.gloss()
+  });
+</script>
+</body>
+</html>
